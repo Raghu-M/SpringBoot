@@ -1,1 +1,26 @@
-
+pipeline{
+    agent any
+    stages{
+        stage('build'){
+            steps{
+                echo 'starting build'
+                echo 'execuiting build'
+                echo 'ending build'
+            }
+        }
+        stage('test'){
+            steps{
+                echo 'starting test'
+                echo 'execuiting test'
+                echo 'ending test'
+            }
+        }
+        stage('deploy'){
+            steps{
+                echo 'starting deploy'
+                echo 'execuiting deploy'
+                echo 'ending deploy'
+            }
+        }
+    }
+}
